@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <style>html,body{
-    background-color: #8FCB9B;
+    background-color: rgba(208, 209, 203, 0.349);
     margin: 0px;
 }
 
@@ -26,13 +26,13 @@
     border-radius: 12px;
     border-color: rgba(0,0,0,0.3);
     background-color: rgba(0,0,0,0.05);
-    min-width: 30%;
-    min-height: 20%;
+    min-width: 35%;
+    min-height: 35%;
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
-    background-color: #EAE6E5;
-    box-shadow: 10px 10px 23px 2px;
+    background-color: rgb(245, 247, 242);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25) ;
 }
 
 .input {
@@ -44,12 +44,26 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background-color: #E5E4E2;
+    border-width: 0.01px;
 }
 
 .H1 {
     align-self: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#username {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+}
+
+#password {
+    border:none;
+    border-radius: 12px;
 }
 
 </style>
@@ -59,8 +73,8 @@
         <div class="card">
             <H1 class ="H1">Log in</H1>
 
-            <input class="input" placeholder="Username" required>
-            <input class="input" placeholder="Password" required>
+            <input id="username" class="input" placeholder="Username" required>
+            <input id="password" class="input" placeholder="Password" required>
             <button class="button">Enter</button>
         </div>
     </div>
